@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birkee Varkeys - Handcrafted Delights</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .btn-cta {
+            background-color: #f9a825;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn-cta:hover {
+            background-color: #e65100;
+        }
+
+        /* Featured Products */
+        .featured-products {
+            background-color: #fff;
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        .featured-products h3 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background-color: #f0e5d8;
+            padding: 20px;
+            width: 22%;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product h4 {
+            margin: 15px 0;
+        }
+
+        .product p {
+            color: #777;
+            font-size: 1.1em;
+        }
+
+        .btn-shop {
+            background-color: #f9a825;
+            padding: 8px 16px;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .btn-shop:hover {
+            background-color: #e65100;
+        }
+
+        /* About Us */
+        .about {
+            background-color: #f9f9f9;
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        .about h3 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 50px 10%;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .testimonials h3 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .testimonial-slider {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .testimonial {
+            width: 30%;
+            background-color: #f0e5d8;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial p {
+            font-style: italic;
+            color: #777;
+        }
+
+        .testimonial h4 {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 10%;
+            text-align: center;
+        }
+
+        footer a {
+            color: #f9a825;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer .social-icons a {
+            margin: 0 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Birkee</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Our Story</a>
+            <a href="#">Shop Varkeys</a>
+            <a href="#">Flavors</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Taste the Tradition, Enjoy the Crunch</h2>
+        <p>Handcrafted Varkeys, Inspired by the Nilgiris, Perfected for You.</p>
+        <a href="#shop" class="btn-cta">Shop Now</a>
+    </div>
+
+    <!-- Featured Products Section -->
+    <div class="featured-products">
+        <h3>Our Best-Selling Varkeys</h3>
+        <div class="products">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="classic-varkey.jpg" alt="Classic Ooty Varkey">
+                <h4>Classic Ooty Varkey</h4>
+                <p>The Original Crisp & Buttery Delight</p>
+                <a href="#shop" class="btn-shop">Add to Cart</a>
+            </div>
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="chocolate-chip-varkey.jpg" alt="Chocolate Chip Varkey">
+                <h4>Chocolate Chip Varkey</h4>
+                <p>Indulge in Rich Chocolate Bliss</p>
+                <a href="#shop" class="btn-shop">Add to Cart</a>
+            </div>
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="cardamom-cashew-varkey.jpg" alt="Cardamom & Cashew Varkey">
+                <h4>Cardamom & Cashew Varkey</h4>
+                <p>A Spice-Laden, Nutty Treat</p>
+                <a href="#shop" class="btn-shop">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="about">
+        <h3>About Birkee</h3>
+        <p>Birkee was born from a love for Ooty’s iconic varkeys. Handcrafted with care using only the finest ingredients, our varkeys bring the flavors of the Nilgiris to your table. From the rolling hills of Ooty to your home, we deliver a crispy, buttery treat that’s perfect for any occasion.</p>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="testimonials">
+        <h3>What Our Customers Are Saying</h3>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <p>“Absolutely love these varkeys! The perfect balance of crisp and buttery.”</p>
+                <h4>Priya S.</h4>
+            </div>
+            <div class="testimonial">
+                <p>“The chocolate chip varkey is a game-changer! My family can’t get enough of them.”</p>
+                <h4>Ramesh K.</h4>
+            </div>
+            <div class="testimonial">
+                <p>“Perfect for gifting or a cozy tea-time snack. Love the variety of flavors!”</p>
+                <h4>Anita M.</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Birkee. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+       
